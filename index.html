@@ -156,6 +156,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-fun" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/24/fun/">fun</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/24/fun/" class="archive-article-date">
+  	<time datetime="2018-03-24T10:05:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="资产收益率计算"><a href="#资产收益率计算" class="headerlink" title="资产收益率计算"></a>资产收益率计算</h2><p>资产收益率-&gt; 盈利大小。往往投资者根据收益率大小R，而非P价格进行投资决策，所以统计时候往往是R的多少，对于不同的资产其收益率计算往往不同。<br>常用的资产收益率：</p>
+<ol>
+<li>单期简单收益率</li>
+<li>多期简单收益率</li>
+<li>单期连续复利收益率</li>
+<li>多期连续复利收益率</li>
+</ol>
+<blockquote>
+<p>单期简单收益率</p>
+</blockquote>
+<p>$$<br>R_i = \frac{P_i} {P_i-1} - 1<br>$$</p>
+<p>主要是一段时间价值的简单衡量</p>
+<blockquote>
+<p>多期简单收益率</p>
+</blockquote>
+<p>$$<br>R_{ik} = \frac 1k \sum_i^{k-1}R_{i-j}-k<br>$$</p>
+<blockquote>
+<p>单期连续复利收益率</p>
+</blockquote>
+<p>$$<br>r_i = \ln P_t - \ln P_{t-1}<br>$$</p>
+<blockquote>
+<p>多期连续复利收益率<br>$$ r_{i,k} = \ln(1 + R_{i,k}) $$</p>
+</blockquote>
+<hr>
+<p>还有的收益率有超额收益率，红利等收益率进行相关的计算</p>
+<pre><code>library(zoo)
+library(timeSeries)
+
+res &lt;- returns(price, method = c(&apos;continuous&apos;), percentage = TRUE)
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">资产收益, R</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/24/fun/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-article" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -443,6 +545,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资产收益, R</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
